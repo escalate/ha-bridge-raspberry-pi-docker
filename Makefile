@@ -1,7 +1,7 @@
 REPO_PREFIX = escalate4u/ha-bridge
 DEVICE_NAME ?= raspberrypi3
 IMAGE_NAME = $(REPO_PREFIX)-$(DEVICE_NAME)
-VERSION_NUM = $(shell curl --silent --fail --location --header 'Accept: application/json' https://api.github.com/repos/bwssytems/ha-bridge/releases/latest | jq -r '.tag_name')
+VERSION_NUM = $(shell curl --silent --fail --location --header 'Accept: application/json' https://api.github.com/repos/bwssytems/ha-bridge/releases/latest | jq -r '.tag_name' | sed 's/^v//g')
 
 .PHONY: build
 build:
