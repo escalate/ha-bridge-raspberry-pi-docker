@@ -8,7 +8,7 @@ build:
 	docker build \
 		--tag=$(IMAGE_NAME):build \
 		--build-arg=DEVICE_NAME=$(DEVICE_NAME) \
-		--build-arg=HA_BRIDGE_VERSION=5.1.0 \
+		--build-arg=HA_BRIDGE_VERSION=$(VERSION_NUM) \
 		.
 
 .PHONY: publish
