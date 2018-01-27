@@ -22,6 +22,4 @@ RUN [ "cross-build-end" ]
 
 COPY /docker-entrypoint.sh /
 
-EXPOSE 80
-
 ENTRYPOINT [ "/docker-entrypoint.sh" ]
