@@ -8,12 +8,12 @@ The following example explains how to run ha-bridge Docker container on Raspberr
 
 ```
 docker run \
-     --name habridge \
+     --name ha-bridge \
      --rm \
      --init \
      --detach \
      --net=host \
-     --volume=$PWD:/habridge/data \
+     --volume=$PWD:/ha-bridge/data \
      --volume=/etc/localtime:/etc/localtime:ro \
      --volume=/etc/timezone:/etc/timezone:ro \
      habridge/ha-bridge-raspberrypi3
@@ -22,13 +22,13 @@ docker run \
 To set additional arguments for ha-bridge just write them as arguments for docker run command.
 ```
 docker run \
-     --name habridge \
+     --name ha-bridge \
      --rm \
      --init \
      --detach \
      --detach \
      --net=host \
-     --volume=$PWD:/habridge/data \
+     --volume=$PWD:/ha-bridge/data \
      --volume=/etc/localtime:/etc/localtime:ro \
      --volume=/etc/timezone:/etc/timezone:ro \
      habridge/ha-bridge-raspberrypi3 \

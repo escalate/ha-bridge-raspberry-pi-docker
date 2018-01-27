@@ -6,7 +6,7 @@ LABEL maintainer="Felix Boerner <ich@felix-boerner.de>"
 
 ARG HA_BRIDGE_VERSION
 
-WORKDIR /habridge
+WORKDIR /ha-bridge
 
 RUN [ "cross-build-start" ]
 
