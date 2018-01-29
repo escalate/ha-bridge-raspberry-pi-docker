@@ -4,8 +4,7 @@
 Automated build of ha-bridge Docker images specialized for Raspberry Pi devices.
 
 ## How to run container
-The following example explains how to run ha-bridge Docker container on Raspberry Pi 3.
-
+The following example explains how to run the latest version of ha-bridge Docker container on Raspberry Pi 3.
 ```
 docker run \
      --name ha-bridge \
