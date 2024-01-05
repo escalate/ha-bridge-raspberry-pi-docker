@@ -11,7 +11,7 @@ WORKDIR /ha-bridge
 
 RUN [ "cross-build-start" ]
 
-# hadolint ignore=DL305
+# hadolint ignore=DL3059
 RUN curl \
     --silent \
     --fail \
