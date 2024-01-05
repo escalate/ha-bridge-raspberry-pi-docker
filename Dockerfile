@@ -8,9 +8,9 @@ ARG HA_BRIDGE_VERSION
 
 WORKDIR /ha-bridge
 
-# hadolint ignore=DL3059
 RUN [ "cross-build-start" ]
 
+# hadolint ignore=DL305
 RUN curl \
     --silent \
     --fail \
