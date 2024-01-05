@@ -9,6 +9,7 @@ ARG HA_BRIDGE_VERSION
 
 WORKDIR /ha-bridge
 
+# hadolint ignore=DL3059
 RUN [ "cross-build-start" ]
 
 # hadolint ignore=DL3059
@@ -20,6 +21,7 @@ RUN curl \
     --output ha-bridge.jar \
     https://github.com/bwssytems/ha-bridge/releases/download/v${HA_BRIDGE_VERSION}/ha-bridge-${HA_BRIDGE_VERSION}.jar
 
+# hadolint ignore=DL3059
 RUN [ "cross-build-end" ]
 
 COPY /docker-entrypoint.sh /
