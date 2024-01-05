@@ -1,5 +1,6 @@
 ARG DEVICE_NAME
 
+# hadolint ignore=DL3007
 FROM resin/${DEVICE_NAME}-openjdk:latest
 
 LABEL maintainer="Felix Boerner <ich@felix-boerner.de>"
