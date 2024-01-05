@@ -1,6 +1,6 @@
 ARG DEVICE_NAME
 
-FROM resin/${DEVICE_NAME}-openjdk
+FROM resin/${DEVICE_NAME}-openjdk:latest
 
 LABEL maintainer="Felix Boerner <ich@felix-boerner.de>"
 
@@ -8,6 +8,7 @@ ARG HA_BRIDGE_VERSION
 
 WORKDIR /ha-bridge
 
+# hadolint ignore=DL3059
 RUN [ "cross-build-start" ]
 
 RUN curl \
