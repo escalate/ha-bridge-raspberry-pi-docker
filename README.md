@@ -1,3 +1,5 @@
+[![Tests](https://github.com/escalate/ha-bridge-raspberry-pi-docker/actions/workflows/tests.yml/badge.svg?branch=master&event=push)](https://github.com/escalate/ha-bridge-raspberry-pi-docker/actions/workflows/tests.yml)
+
 # ha-bridge-raspberry-pi-docker
 
 Automated build of ha-bridge Docker images specialized for Raspberry Pi devices.
@@ -6,32 +8,32 @@ Automated build of ha-bridge Docker images specialized for Raspberry Pi devices.
 The following example explains how to run the latest version of ha-bridge Docker container on Raspberry Pi 3.
 ```
 docker run \
-     --name ha-bridge \
-     --rm \
-     --init \
-     --detach \
-     --net=host \
-     --volume=$PWD:/ha-bridge/data \
-     --volume=/etc/localtime:/etc/localtime:ro \
-     --volume=/etc/timezone:/etc/timezone:ro \
-     habridge/ha-bridge-raspberrypi3
+      --name ha-bridge \
+      --rm \
+      --init \
+      --detach \
+      --net=host \
+      --volume=$PWD:/ha-bridge/data \
+      --volume=/etc/localtime:/etc/localtime:ro \
+      --volume=/etc/timezone:/etc/timezone:ro \
+      habridge/ha-bridge-raspberrypi3
 ```
 
 To set additional arguments for ha-bridge just write them as arguments for docker run command.
 ```
 docker run \
-     --name ha-bridge \
-     --rm \
-     --init \
-     --detach \
-     --detach \
-     --net=host \
-     --volume=$PWD:/ha-bridge/data \
-     --volume=/etc/localtime:/etc/localtime:ro \
-     --volume=/etc/timezone:/etc/timezone:ro \
-     habridge/ha-bridge-raspberrypi3 \
-     -Dserver.port=8080 \
-     -Dsecurity.key=secret
+      --name ha-bridge \
+      --rm \
+      --init \
+      --detach \
+      --detach \
+      --net=host \
+      --volume=$PWD:/ha-bridge/data \
+      --volume=/etc/localtime:/etc/localtime:ro \
+      --volume=/etc/timezone:/etc/timezone:ro \
+      habridge/ha-bridge-raspberrypi3 \
+      -Dserver.port=8080 \
+      -Dsecurity.key=secret
 ```
 
 ## Docker Hub Repos
