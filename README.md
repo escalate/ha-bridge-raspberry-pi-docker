@@ -1,10 +1,11 @@
-[![Tests](https://github.com/escalate/ha-bridge-raspberry-pi-docker/actions/workflows/tests.yml/badge.svg?branch=master&event=push)](https://github.com/escalate/ha-bridge-raspberry-pi-docker/actions/workflows/tests.yml)
+[![Test](https://github.com/escalate/ha-bridge-raspberry-pi-docker/actions/workflows/test.yml/badge.svg?branch=master&event=push)](https://github.com/escalate/ha-bridge-raspberry-pi-docker/actions/workflows/test.yml)
 
 # ha-bridge-raspberry-pi-docker
 
 Automated build of ha-bridge Docker images specialized for Raspberry Pi devices.
 
 ## How to run container
+
 The following example explains how to run the latest version of ha-bridge Docker container on Raspberry Pi 3.
 ```
 docker run \
