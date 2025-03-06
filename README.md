@@ -7,6 +7,7 @@ Automated build of ha-bridge Docker images specialized for Raspberry Pi devices.
 ## How to run container
 
 The following example explains how to run the latest version of ha-bridge Docker container on Raspberry Pi 3.
+
 ```
 docker run \
       --name ha-bridge \
@@ -21,6 +22,7 @@ docker run \
 ```
 
 To set additional arguments for ha-bridge just write them as arguments for docker run command.
+
 ```
 docker run \
       --name ha-bridge \
@@ -39,9 +41,9 @@ docker run \
 
 ## Docker Hub Repos
 
-* [habridge/ha-bridge-raspberry-pi](https://hub.docker.com/r/habridge/ha-bridge-raspberry-pi)
-* [habridge/ha-bridge-raspberry-pi2](https://hub.docker.com/r/habridge/ha-bridge-raspberry-pi2)
-* [habridge/ha-bridge-raspberrypi3](https://hub.docker.com/r/habridge/ha-bridge-raspberrypi3)
+- [habridge/ha-bridge-raspberry-pi](https://hub.docker.com/r/habridge/ha-bridge-raspberry-pi)
+- [habridge/ha-bridge-raspberry-pi2](https://hub.docker.com/r/habridge/ha-bridge-raspberry-pi2)
+- [habridge/ha-bridge-raspberrypi3](https://hub.docker.com/r/habridge/ha-bridge-raspberrypi3)
 
 ## License
 
